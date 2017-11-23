@@ -1,17 +1,44 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      View List
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+  <ion-item-sliding *ngFor="let item of items">
+    <ion-item >
+      <ion-avatar item-start>
+        <img src="http://wfarm3.dataknet.com/static/resources/icons/set72/61de45fa.png">
+      </ion-avatar>
+
+      <h2>id: {{item.id}}</h2>
+      <h2>Name:  {{item.name}}</h2>
+      <p>{{item.desc}}</p>
     </ion-item>
-  </ion-list>
+    <!--<ion-item-options side="left">
+      <button ion-button color="primary">
+        <ion-icon name="text"></ion-icon>
+        Text
+      </button>
+      <button ion-button color="secondary">
+        <ion-icon name="call"></ion-icon>
+        Call
+      </button>
+    </ion-item-options>-->
+    <ion-item-options side="right">
+      <button ion-button color="primary" (click)="callMe(item)">
+        <ion-icon name="edit"></ion-icon>
+        Edit
+      </button>
+      <button ion-button color="secondary" (click)="delete(item)">
+        <ion-icon name="delete"></ion-icon>
+        Delete
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
 </ion-content>

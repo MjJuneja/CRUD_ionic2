@@ -1,3 +1,29 @@
 page-home {
 
 }
+
+$white : white;
+.whiteText{
+    color: $white;
+    text-align: center;
+}
+
+div{
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+}
+
+ion-img{
+    vertical-align: center;
+    width: 40%;
+    height: 120px;
+    
+}
+
+@media (max-width:400px){
+    ion-img{
+        height: 70px;
+    }
+
+}

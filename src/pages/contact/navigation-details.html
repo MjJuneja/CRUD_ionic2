@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Add Data
+      {{ item.name }}
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -9,15 +9,17 @@
 <ion-content padding>
   <form>
       <ion-item>
+        <ion-label>Id</ion-label>
+        <ion-input type="text" [(ngModel)]="id" (click)="showAlert()" [readonly]="isReadonly()" name="title"></ion-input>
+      </ion-item>
+      <ion-item>
         <ion-label>Name</ion-label>
         <ion-input type="text" [(ngModel)]="title" name="title"></ion-input>
       </ion-item>
-      <br>
       <ion-item>
         <ion-label>Description</ion-label>
         <ion-textarea [(ngModel)]="desc" name="desc"></ion-textarea>
       </ion-item>
-      <br>
-      <button ion-button type="submit" block (click)="addData()">Add Data</button>
+      <button ion-button type="submit" block (click)="editData()">Edit Data</button>
     </form>
 </ion-content>
