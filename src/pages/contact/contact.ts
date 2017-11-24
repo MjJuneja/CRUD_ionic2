@@ -5,6 +5,7 @@ import {DataModel} from '../../app/untitled folder/data.modal';
 import { ToastController } from 'ionic-angular';
 @Component({
   templateUrl: 'navigation-details.html',
+  selector: 'page-navigate'
 })
 export class NavigationDetailsPage implements OnInit{
   private item:DataModel;

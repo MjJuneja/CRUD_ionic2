@@ -1,2 +1,41 @@
 
+page-contact{
+    ion-item-sliding{
+    margin: 5px;
+    border-radius: 10px;
+}
 
+.list{
+    background: url(../assets/imgs/list.jpg);
+    background-repeat: no-repeat;
+    // background-size: 100% 200%; 
+}
+}
+
+
+
+page-navigate{
+    .dk{
+    background: url(../assets/imgs/dk.png);
+    background-position: left top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    
+
+}
+
+.dist{
+    margin-bottom: 10px;
+}
+
+form{
+    margin: 30% auto;
+}
+
+@media(max-width:400px){
+    .dk{
+        background-size: 100%;
+        background-position: right top;
+    }
+}
+}

@@ -6,13 +6,13 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="list">
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list>
   <ion-item-sliding *ngFor="let item of items">
     <ion-item >
       <ion-avatar item-start>
-        <img src="http://wfarm3.dataknet.com/static/resources/icons/set72/61de45fa.png">
+        <img src="assets/imgs/info.png">
       </ion-avatar>
 
       <h2>id: {{item.id}}</h2>

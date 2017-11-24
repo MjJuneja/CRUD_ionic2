@@ -6,13 +6,13 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="dk">
   <form>
-      <ion-item>
+      <ion-item class="dist">
         <ion-label>Id</ion-label>
         <ion-input type="text" [(ngModel)]="id" (click)="showAlert()" [readonly]="isReadonly()" name="title"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item class="dist">
         <ion-label>Name</ion-label>
         <ion-input type="text" [(ngModel)]="title" name="title"></ion-input>
       </ion-item>

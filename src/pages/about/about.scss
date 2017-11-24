@@ -1,3 +1,11 @@
-ion-content {
-    background: url("http://eskipaper.com/images/dark-gradient-wallpaper-1.jpg");
+// ion-content {
+//     background-image: url("assets/imgs/bg.jpg");
+// }
+page-about{
+.data{
+    background: url(../assets/imgs/data.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    overflow: hidden;
+}
 }

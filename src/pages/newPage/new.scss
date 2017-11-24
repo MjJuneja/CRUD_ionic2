@@ -1,3 +1,4 @@
+page-new{
 $white : white;
 .whiteText{
     margin: 20px;
@@ -8,4 +9,15 @@ $white : white;
 .white{
     color: $white;
     text-align: left;
+    font-size: 20px;
 }
+
+.bg{
+    background: url(../assets/imgs/dark.jpg);
+    background-position: left top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+}
+
